@@ -1,7 +1,10 @@
 @mixin section-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
+
+  // font-size: 36px;
+
   text-align: center;
   color: var(--link-text-color);
 }

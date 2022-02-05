@@ -1,0 +1,34 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social__item + .social__item {
+  margin-left: 10px;
+}
+
+.social__link {
+  background-color: var(--secondary-text-color);
+  @include icon-link;
+  color: #afb1b8;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+  }
+  &-logo {
+    fill: currentColor;
+  }
+}
+
+.social__footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  @include icon-link;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social__footer-logo {
+  fill: var(--secondary-text-color);
+}

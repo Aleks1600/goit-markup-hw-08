@@ -103,8 +103,8 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--first-logo-color);
 }
 
@@ -1151,20 +1151,36 @@ body {
 }
 
 .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .container__address {
-  width: 231px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container__address {
+    width: calc(100% / 2);
+  }
 }
 
 .addres__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .addres__link-map {
@@ -1192,8 +1208,14 @@ body {
 }
 
 .footer__social {
-  width: 206px;
-  margin-left: 70px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social {
+    width: calc(100% / 2);
+    margin-bottom: 102px;
+  }
 }
 
 .footer__title {
@@ -1205,26 +1227,9 @@ body {
   margin-bottom: 20px;
 }
 
-.footer__subscription {
-  width: 570px;
-  margin-left: 93px;
-}
-
-.subscription__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .subscription__email-input {
-  display: inline-block;
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -1240,8 +1245,13 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding-left: 16px;
-  margin-right: 12px;
   cursor: pointer;
+}
+
+.subscription__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .subscription__btn-text {
@@ -1254,7 +1264,8 @@ body {
 }
 
 .subscription__btn {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;

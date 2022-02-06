@@ -108,6 +108,13 @@ body {
   color: var(--first-logo-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .header__logo {
   margin-right: 93px;
 }
@@ -1169,13 +1176,29 @@ body {
   }
 }
 
-.container__address {
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    text-align: left;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.footer__address {
   margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
-  .container__address {
+  .footer__address {
     width: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    width: 231px;
+    margin-bottom: 0;
   }
 }
 
@@ -1218,6 +1241,14 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    width: 206px;
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
+}
+
 .footer__title {
   font-weight: 700;
   font-size: 14px;
@@ -1225,6 +1256,31 @@ body {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
+}
+
+.footer__subscription {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscription {
+    width: 570px;
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .subscription__email-input {
@@ -1248,10 +1304,24 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription__email-input {
+    display: inline-block;
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
 .subscription__btn {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription__btn {
+    margin-top: 0;
+  }
 }
 
 .subscription__btn-text {

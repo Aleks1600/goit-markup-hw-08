@@ -1,4 +1,7 @@
 .we-can {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-bottom: 94px;
 }
 .we-can__title {

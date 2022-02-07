@@ -22,8 +22,12 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -39,7 +43,12 @@
     display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    @media screen and (min-width: 480px) {
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
     text-align: center;
     color: #212121;
     margin-bottom: 12px;
@@ -66,8 +75,12 @@
   }
   &text {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
     letter-spacing: 0.01em;
     color: var(--primery-text-color);
     display: block;
@@ -113,8 +126,12 @@
   margin-bottom: 30px;
   &__check-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
     color: var(--primery-text-color);
     display: flex;
     align-items: center;

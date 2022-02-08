@@ -49,7 +49,7 @@
   transition-timing-function: $transition-function;
   &:hover,
   &:focus {
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
   }
 }
 

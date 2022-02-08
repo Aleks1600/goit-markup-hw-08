@@ -250,7 +250,7 @@
   top: 0;
   right: 0;
   margin: 8px;
-  background: #ffffff;
+  background: $background-conponents-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
@@ -260,7 +260,7 @@
   transition-timing-function: $transition-function;
   &:hover,
   &:focus {
-    color: $-accent-color;
+    color: $accent-color;
   }
 }
 .modal_close-icon {

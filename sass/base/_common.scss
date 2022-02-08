@@ -2,8 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
-  color: #757575;
-  background-color: #ffffff;
+  color: $primery-text-color;
+  background-color: $background-conponents-color;
 }
 
 .list {

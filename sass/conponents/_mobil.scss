@@ -23,7 +23,7 @@
 }
 
 .mob-menu-container.is-open {
-  background-color: #fff;
+  background-color: $background-conponents-color;
   opacity: 1;
   visibility: visible;
   transform: translateX(0);

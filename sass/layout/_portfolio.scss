@@ -1,14 +1,30 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 .filter {
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   & .filter__item:not(:last-child) {
     margin-right: 8px;
+  }
+  & .filter__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    &.filter .filter__item {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -39,28 +55,39 @@
 }
 
 .card__img {
-  display: block;
   width: 100%;
 }
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
-  list-style: none;
-  & > .card__item {
-    flex-basis: calc((100% - 90px) / 3);
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+  & .card__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    &.portfolio__card .card__item {
+      margin-bottom: 0;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+    list-style: none;
+    & > .card__item {
+      flex-basis: calc((100% - 60px) / 2);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & > .card__item {
+      flex-basis: calc((100% - 90px) / 3);
+    }
   }
 }
 
-.card__item:hover .card__text {
-  transform: translateY(0);
-}
-
-.card__link {
-  display: block;
+.card__item {
+  &:hover .card__text {
+    transform: translateY(0);
+  }
+  border: 1px solid #eeeeee;
   transition-property: box-shadow;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
@@ -69,6 +96,10 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+}
+
+.card__link {
+  display: block;
 }
 .card__container {
   position: relative;
@@ -85,16 +116,13 @@
   color: var(--secondary-text-color);
   padding: 63px 24px;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
 }
 .card__container-description {
   padding: 20px 24px 20px 24px;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  border-top: 0;
 }
 .card__title {
   font-weight: 700;

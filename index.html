@@ -570,25 +570,22 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="modal__policy policy">
+          <label for="policy" class="modal__policy modal__form">
             <input
               type="checkbox"
               name="policy"
               id="policy"
               class="policy__check visually-hidden"
             />
-            <label for="policy" class="policy__check-text">
-              <span class="policy__icon-span">
-                <svg class="policy__icon" width="16" height="15">
-                  <use
+              <svg class="policy__icon" width="16" height="15">
+                <use
                     href="images/icons.svg#icon-vectorgalochka"
-                  ></use></svg></span
-              >Соглашаюсь с рассылкой и принимаю
+                ></use>
+              </svg>
+              <span class="policy__text-span">Соглашаюсь с рассылкой и принимаю&nbsp;
               <a href="#" target="_blank" class="link policy__link"
-                >Условия договора</a
-              ></label
-            >
-          </div>
+                >Условия договора</a></span>
+          </label>
           <button type="submit" class="modal__button">Отправить</button>
         </form>
         <button data-modal-close type="button" class="modal__close">

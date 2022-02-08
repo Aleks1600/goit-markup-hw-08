@@ -3,7 +3,7 @@
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
-  color: var(--link-text-color);
+  color: $link-text-color;
   @media screen and (min-width: 1200px) {
     font-size: 36px;
   }
@@ -17,6 +17,6 @@
   justify-content: center;
   align-items: center;
   transition-property: color, background-color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
+  transition-duration: $transition-time;
+  transition-timing-function: $transition-function;
 }

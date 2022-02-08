@@ -7,13 +7,13 @@
 }
 
 .social__link {
-  background-color: var(--secondary-text-color);
+  background-color: $secondary-text-color;
   @include icon-link;
   color: #afb1b8;
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
-    color: var(--secondary-text-color);
+    background-color: $accent-color;
+    color: $secondary-text-color;
   }
   &-logo {
     fill: currentColor;
@@ -25,10 +25,10 @@
   @include icon-link;
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
 .social__footer-logo {
-  fill: var(--secondary-text-color);
+  fill: $secondary-text-color;
 }

@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--hero-footer-dg-color);
+  background-color: $hero-footer-dg-color;
   padding-top: 118px;
   padding-bottom: 118px;
   @media screen and (min-width: 1200px) {
@@ -73,7 +73,7 @@
   }
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   margin: 0 auto 30px auto;
 }
 .hero__button {
@@ -83,9 +83,9 @@
   line-height: 1.87;
   align-items: center;
   letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: $secondary-text-color;
+  background-color: $accent-color;
+  border-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 200px;
@@ -93,8 +93,8 @@
   display: block;
   margin: 0 auto;
   transition-property: background-color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
+  transition-duration: $transition-time;
+  transition-timing-function: $transition-function;
   &:hover,
   &:focus {
     background-color: #188ce8;

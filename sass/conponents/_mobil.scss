@@ -39,13 +39,13 @@
   padding: 0;
   border: transparent;
   background-color: transparent;
-  fill: var(--last-logo-color);
+  fill: $last-logo-color;
   transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
+  transition-duration: $transition-time;
+  transition-timing-function: $transition-function;
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -80,17 +80,17 @@
   letter-spacing: 0.02em;
   color: var(--link-text-color);
   transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
+  transition-duration: $transition-time;
+  transition-timing-function: $transition-function;
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
 .mobile-menu--current {
-  color: var(--accent-color);
-  border-bottom: 4px solid var(--accent-color);
+  color: $accent-color;
+  border-bottom: 4px solid $accent-color;
 }
 .mob-menu-contacts {
   margin-bottom: 64px;
@@ -106,7 +106,7 @@
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: $accent-color;
   @media screen and (max-width: 479px) {
     font-size: 30px;
   }
@@ -132,5 +132,5 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: $accent-color;
 }

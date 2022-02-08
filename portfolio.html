@@ -190,7 +190,20 @@
             <li class="card__item">
               <a class="link card__link" href="">
                 <div class="card__container">
-                  <img class="card__img" src="./images/portfolio1.jpg" alt="" />
+                  <img
+                    class="card__img"
+                    srcset="
+                      ./images/portfolio/portfolio1-tab-1x.jpg 354w,
+                      ./images/portfolio/portfolio1-des-1x.jpg 370w,
+                      ./images/portfolio/portfolio1-mob-1x.jpg 450w,
+                      ./images/portfolio/portfolio1-tab-2x.jpg 708w,
+                      ./images/portfolio/portfolio1-des-2x.jpg 740w,
+                      ./images/portfolio/portfolio1-mob-2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/portfolio1-mob-1x.jpg"
+                    alt="фото"
+                  />
                   <p class="card__text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
